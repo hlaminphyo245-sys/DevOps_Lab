@@ -1,4 +1,4 @@
-FROM eclipse-temurin:25
-COPY ./target/classes/com /tmp/com
+FROM eclipse-temurin:25-jdk
+COPY ./target/DevOps_Lab-1.0-SNAPSHOT-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.DevOps_Lab.App"]
+ENTRYPOINT ["java", "-jar", "DevOps_Lab-1.0-SNAPSHOT-jar-with-dependencies.jar"]
