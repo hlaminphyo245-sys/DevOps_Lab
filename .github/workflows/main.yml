@@ -13,11 +13,9 @@ jobs:
           java-version: '25'
           distribution: 'temurin'
 
-      # ၁။ အရင်ဆုံး Test တွေကို Run ပါမယ် (Fail ရင် ဒီမှာတင် ရပ်သွားပါမယ်)
       - name: Unit Tests
         run: mvn test
 
-      # ၂။ Test အောင်မြင်မှ အောက်ပါတာတွေကို ဆက်လုပ်ပါမယ်
       - name: Setup network and MongoDB
         run: |
           docker network create --driver bridge se-methods
@@ -34,9 +32,3 @@ jobs:
 
       - name: View logs
         run: docker logs devopscontainer
-
-      - name: Package and Run docker compose
-        run: |
-          mvn package -DskipTests
-          docker compose up --abort-on-container-exit
-        
