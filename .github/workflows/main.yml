@@ -24,7 +24,7 @@ jobs:
       - name: Unit Tests
         run: mvn -Dtest=com.napier.DevOps_Lab.AppTest test
 
-  Integration Tests:
+  IntegrationTests:
     name: Integration Tests
     runs-on: ubuntu-22.04
     services:
