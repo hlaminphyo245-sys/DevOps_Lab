@@ -37,6 +37,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <!-- ဒီ archive block လေး သေချာပါရှိကြောင်း စစ်ဆေးဖို့လို -->
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
