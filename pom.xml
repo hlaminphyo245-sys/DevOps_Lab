@@ -39,6 +39,7 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <addClasspath>true</addClasspath>
                             <mainClass>com.napier.DevOps_Lab.App</mainClass>
                         </manifest>
                     </archive>
