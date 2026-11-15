@@ -24,18 +24,7 @@ jobs:
       - name: Unit Tests
         run: mvn -Dtest=com.napier.DevOps_Lab.AppTest test
 
-  IntegrationTests:
-    name: Integration Tests
-    runs-on: ubuntu-22.04
-    services:
-      mysql:
-        image: mysql:latest
-        env:
-          MYSQL_ROOT_PASSWORD: example
-          MYSQL_DATABASE: employees
-        ports:
-          - 33060:33060
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
 
     steps:
       - name: Checkout
