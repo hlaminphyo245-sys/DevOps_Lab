@@ -30,6 +30,7 @@
     </dependencies>
 
     <build>
+        <finalName>devops</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -66,7 +67,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.2</version>
+                <version>0.8.13</version>
                 <executions>
                     <execution>
                         <goals>
