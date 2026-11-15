@@ -60,7 +60,7 @@ jobs:
           flags: Integration Tests
           verbose: true
 
-build:
+  build:
     name: Build and Test Action
     runs-on: ubuntu-22.04
     steps:
