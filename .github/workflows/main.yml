@@ -49,7 +49,6 @@ jobs:
 
       - name: Integration Tests and CodeCov
         env:
-          MYSQL_HOST: 127.0.0.1
           MYSQL_PORT: 33060
         run: |
           mvn -Dtest=com.napier.DevOps_Lab.AppIntegrationTest test
