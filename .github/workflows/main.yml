@@ -47,9 +47,12 @@ jobs:
           java-version: '25'
           distribution: 'temurin'
 
+      # ဒီနေရာတွင် Database Schema ကို အရင် Import လုပ်ပေးပါ
+      - name: Import Database Schema
+        run: |
+          mysql -h 127.0.0.1 -P 33060 -u root -pexample employees < db/test_db/employees.sql
+
       - name: Integration Tests and CodeCov
-        env:
-          MYSQL_PORT: 33060
         run: |
           mvn -Dtest=com.napier.DevOps_Lab.AppIntegrationTest test
 
