@@ -59,13 +59,14 @@
                 </executions>
             </plugin>
 
-            <!-- အသစ်, Surefire Plugin (Test တွေ run ဖို့) -->
+            <!-- Unit & Integration Test များ run ရန် -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
 
+            <!-- Code coverage report ထုတ်ရန် -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
